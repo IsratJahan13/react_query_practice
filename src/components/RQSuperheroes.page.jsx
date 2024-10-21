@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReactQueryFetchSuperheroesPage = () => {
+const RQSuperheroesPage = () => {
     return (
         <div>
             React Query Superheroes Page
@@ -8,4 +8,4 @@ const ReactQueryFetchSuperheroesPage = () => {
     );
 };
 
-export default ReactQueryFetchSuperheroesPage;
+export default RQSuperheroesPage;

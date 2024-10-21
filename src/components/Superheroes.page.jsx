@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TraditionalWayOfFetchingSuperheroesPage = () => {
+const SuperheroesPage = () => {
     return (
         <div>
             Traditional Superheroes Page
@@ -8,4 +8,4 @@ const TraditionalWayOfFetchingSuperheroesPage = () => {
     );
 };
 
-export default TraditionalWayOfFetchingSuperheroesPage;
+export default SuperheroesPage;
