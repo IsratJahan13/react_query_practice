@@ -6,12 +6,16 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import SuperheroesPage from './components/Superheroes.page'
 import RQSuperheroesPage from './components/RQSuperheroes.page'
 import HomePage from './components/Home.page'
+import { QueryClientProvider } from 'react-query'
+import { QueryClient } from '../node_modules/react-query/es/core/queryClient';
+
+const queryClient = new QueryClient()
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <Router>
+    <QueryClientProvider client={queryClient}> 
+      <Router>
       <div>
         <nav>
           <ul>
@@ -33,6 +37,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </QueryClientProvider>
   )
 }
 
